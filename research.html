@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geotechnical Research — Geosynthetic Textiles — Pedro Xavier Guzman</title>
+<meta name="description" content="Undergraduate Geotechnical Fellow — re-engineered how geosynthetic-textile data is captured: an automated water-siphoning rig and thermal capillary-rise monitoring, +60% precision.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__mark">P<b>G</b></span>
+      <span class="brand__name"><strong>Pedro X. Guzman</strong><span>Selected Work</span></span>
+    </a>
+    <nav class="nav">
+      <a class="nav-hide" href="index.html#work">Work</a>
+      <a class="nav-hide" href="index.html#about">About</a>
+      <a class="btn btn--primary btn--sm" href="index.html#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap proj-top">
+  <a class="back-link" href="index.html#work">← Back to all work</a>
+  <div class="proj-head">
+    <div class="proj-head__num">06</div>
+    <div>
+      <div class="eyebrow">Undergraduate Geotechnical Fellow · Research</div>
+      <h1>Geotechnical Research — Geosynthetic Textiles</h1>
+    </div>
+  </div>
+</div>
+
+<div class="wrap proj-body">
+
+  <div class="media media--feature reveal">
+    <span class="media__play"></span>
+    <span class="media__cap">[ feature video — frame-by-frame experiment footage ]</span>
+  </div>
+
+  <p class="muted" style="font-size:16px;line-height:1.65;margin:18px 0 0;max-width:74ch;">My work centered on the geosynthetic fabric itself — how it moves and holds water. The fellowship's bigger contribution was re-engineering <em style="color:var(--ink);font-style:normal;font-weight:600;">how the data was captured</em>, replacing variable, human-timed readings with continuous, instrument-grade measurement.</p>
+
+  <!-- Sub-project A -->
+  <div class="proj-section">
+    <span class="label">01 · Automated Water-Siphoning Rig</span>
+    <div class="split" style="margin-top:14px;">
+      <div class="prose">
+        <p>Inside a temperature- and humidity-controlled chamber, a water-filled beaker sat on one scale with a textile strip dipped in it; the fabric siphoned water into a second, empty beaker on its own scale. Rather than send someone to photograph the scales three times a day — introducing timing variability every reading — I mounted a GoPro to the chamber's glass panel to record continuously, then wrote a script that stripped the footage frame by frame into a mass-change time-series for both beakers.</p>
+        <div class="quote">
+          <p>"One camera turned an experiment someone had to babysit into a dataset that recorded itself."</p>
+        </div>
+        <table class="data">
+          <thead><tr><th>Metric</th><th>Manual method</th><th class="hl">Automated rig</th></tr></thead>
+          <tbody>
+            <tr><td>Capture frequency</td><td>3× per day</td><td class="hl">24/7 continuous</td></tr>
+            <tr><td>Reading source</td><td>Hand photo, lab visit</td><td class="hl">GoPro, frame-by-frame</td></tr>
+            <tr><td>Timing variability</td><td>High — human-dependent</td><td class="hl">Removed — fixed interval</td></tr>
+            <tr><td>Environment</td><td>Open bench</td><td class="hl">Temp- &amp; humidity-controlled</td></tr>
+            <tr><td>Output</td><td>Sparse spot readings</td><td class="hl">Per-frame mass time-series</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="aside">
+        <div class="media media--photo reveal"><span class="media__cap">[ photo — dual-beaker siphon rig on scales ]</span></div>
+        <div class="media media--photo reveal"><span class="media__cap">[ frame — GoPro mass-change capture ]</span></div>
+      </div>
+    </div>
+
+    <div class="chart-card reveal">
+      <div class="label" style="color:var(--bronze);margin-bottom:22px;">Measured Impact</div>
+      <div class="chart-2col">
+        <div>
+          <div class="muted" style="font-size:13px;margin-bottom:18px;">Data-capture frequency</div>
+          <div class="bar-row">
+            <span class="blab" style="width:78px;">Manual</span>
+            <div class="bar-track"><div class="bar-fill" style="width:5%;background:#C4C9D1;"></div></div>
+            <span class="bar-val" style="width:78px;">3× / day</span>
+          </div>
+          <div class="bar-row">
+            <span class="blab" style="width:78px;">Automated</span>
+            <div class="bar-track"><div class="bar-fill" style="width:100%;background:linear-gradient(90deg,#2F6CA8,#1E3A5F);"></div></div>
+            <span class="bar-val" style="width:78px;color:var(--navy);">24 / 7</span>
+          </div>
+        </div>
+        <div class="chart-divider">
+          <div class="stat-num" style="font-size:48px;">24/7</div>
+          <div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">continuous capture, up from 3 readings a day — no human in the loop.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sub-project B -->
+  <div class="proj-section">
+    <span class="label">02 · Capillary-Rise Thermal Monitoring</span>
+    <div class="split" style="margin-top:14px;">
+      <div class="prose">
+        <p>When the capillary-rise study passed to me, the standard method was eyeballing the highest point the water reached — far too subjective — and adding dye, which itself altered absorption at the microscopic scale and skewed the result. I requested a thermal camera and tracked the temperature differential instead, letting me watch capillary rise climb the textile vertically in real time, without touching the sample. Average reading precision improved by more than 60%.</p>
+        <div class="quote">
+          <p>"The dye we used to see the water was the very thing changing how it moved. Heat let me measure without interfering."</p>
+        </div>
+        <table class="data">
+          <thead><tr><th>Metric</th><th>Eyeball + dye</th><th class="hl">Thermal camera</th></tr></thead>
+          <tbody>
+            <tr><td>Reading method</td><td>Visual highest point</td><td class="hl">Temperature gradient</td></tr>
+            <tr><td>Sample interference</td><td>Dye alters absorption</td><td class="hl">None — non-contact</td></tr>
+            <tr><td>Tracking</td><td>Single endpoint</td><td class="hl">Live vertical rise</td></tr>
+            <tr><td>Avg. precision</td><td>Baseline</td><td class="hl">+60% on average</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="aside">
+        <div class="media media--photo reveal"><span class="media__cap">[ thermal — capillary rise gradient ]</span></div>
+        <div class="media media--photo reveal"><span class="media__cap">[ photo — thermal camera setup ]</span></div>
+      </div>
+    </div>
+
+    <div class="chart-card reveal">
+      <div class="label" style="color:var(--bronze);margin-bottom:22px;">Measured Impact</div>
+      <div class="chart-2col">
+        <div>
+          <div class="muted" style="font-size:13px;margin-bottom:18px;">Reading precision vs. eyeball + dye baseline</div>
+          <div class="bar-row">
+            <span class="blab" style="width:78px;">Baseline</span>
+            <div class="bar-track"><div class="bar-fill" style="width:40%;background:#C4C9D1;"></div></div>
+            <span class="bar-val">1.0×</span>
+          </div>
+          <div class="bar-row">
+            <span class="blab" style="width:78px;">Thermal</span>
+            <div class="bar-track"><div class="bar-fill" style="width:64%;background:linear-gradient(90deg,#2F6CA8,#1E3A5F);"></div></div>
+            <span class="bar-val" style="color:var(--navy);">1.6×</span>
+          </div>
+        </div>
+        <div class="chart-divider">
+          <div style="display:flex;align-items:baseline;gap:3px;"><span class="stat-num" style="font-size:52px;">+60</span><span class="stat-num" style="font-size:30px;">%</span></div>
+          <div class="muted" style="font-size:13px;margin-top:6px;line-height:1.45;">average precision gain, with zero sample interference.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- next project -->
+  <div class="proj-section proj-section--tight" style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;">
+    <a class="back-link" href="index.html#work">← All work</a>
+    <a class="btn btn--ghost" href="sbi.html">Back to start: Sustainable Building <span class="arrow">→</span></a>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <div>
+      <h3>Let's talk.</h3>
+      <div class="contact">
+        PEDRO XAVIER GUZMAN · AUSTIN, TX<br>
+        <a href="tel:+17139290180">+1 (713) 929-0180</a> · <a href="https://linkedin.com/in/pedroxguzman" target="_blank" rel="noopener">linkedin.com/in/pedroxguzman</a>
+      </div>
+    </div>
+    <div class="footer-actions">
+      <a class="btn btn--primary btn--sm" href="mailto:hello@example.com">Email me</a>
+      <a class="btn btn--ghost btn--sm" href="https://linkedin.com/in/pedroxguzman" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
